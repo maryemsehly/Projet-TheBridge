@@ -1,0 +1,206 @@
+
+.admin-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.logout-btn {
+    background-color: #bd1b74;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.logout-btn:hover {
+    background-color: #db519d;
+}
+
+
+.create-item-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.create-item-form input {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-item-form .create-btn {
+    background-color: #bd1b74;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.create-item-form .create-btn:hover {
+    background-color:#e34b9e;
+}
+
+
+.items-list {
+    margin-top: 30px;
+}
+
+.items-list h2 {
+    margin-bottom: 20px;
+}
+
+.item-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.item-card img {
+    margin-right: 15px;
+    border-radius: 4px;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.item-card p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.item-card .update-btn,
+.item-card .delete-btn {
+    background-color: #840b4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.item-card .delete-btn {
+    background-color: #000000;
+}
+
+.item-card .update-btn:hover {
+    background-color: #c93285;
+}
+
+.item-card .delete-btn:hover {
+    background-color: #313030;
+}
+
+.loading-text {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.update-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.update-modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-modal h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.update-modal input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.update-modal .modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.update-modal button.ok-btn {
+    background-color:#bd1b74;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    width: 48%;
+}
+
+.update-modal button.cancel-btn {
+    background-color: #000000;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.update-modal button:hover {
+    opacity: 0.8;
+}
+
+.item-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
